@@ -8,7 +8,7 @@ Component({
 	properties: {
         date: {
             type: String,
-            value: '2024-10-07'
+            value: ''
         }
     },
 
@@ -39,29 +39,30 @@ Component({
                     dayOfWeek
                 } = this.lunisolarDate
 
+                /* 手动写了哈哈哈哈哈哈哈哈，我真聪明
                 // 生成日历表
                 // 先计算出当月1号是星期几
-                // 手动写了哈哈哈哈哈哈哈哈
-                // let beginDayOfWeek = day === 1 ? dayOfWeek : ((dayOfWeek - day + 1) % 7)
-                // beginDayOfWeek < 0 && (beginDayOfWeek += 7)
+                let beginDayOfWeek = day === 1 ? dayOfWeek : ((dayOfWeek - day + 1) % 7)
+                beginDayOfWeek < 0 && (beginDayOfWeek += 7)
 
-                // // 生成首周
-                // const list = []
-                // let curDay = 1
-                // const firstWeek = (new Array(beginDayOfWeek)).fill('')
-                // for (let i = beginDayOfWeek; i < 7; i++) firstWeek.push(curDay++)
-                // list.push(firstWeek)
+                // 生成首周
+                const list = []
+                let curDay = 1
+                const firstWeek = (new Array(beginDayOfWeek)).fill('')
+                for (let i = beginDayOfWeek; i < 7; i++) firstWeek.push(curDay++)
+                list.push(firstWeek)
 
-                // // 继续生成后面的日历数据
-                // let otherWeek = []
-                // for (let end = getMonthDayCount(year, month); curDay <= end; curDay++) {
-                //     if (otherWeek.length === 7) {
-                //         list.push(otherWeek)
-                //         otherWeek = []
-                //     }
-                //     otherWeek.push(curDay)
-                // }
-                // list.push(otherWeek)
+                // 继续生成后面的日历数据
+                let otherWeek = []
+                for (let end = getMonthDayCount(year, month); curDay <= end; curDay++) {
+                    if (otherWeek.length === 7) {
+                        list.push(otherWeek)
+                        otherWeek = []
+                    }
+                    otherWeek.push(curDay)
+                }
+                list.push(otherWeek)
+                */
 
                 this.setData({
                     list,
