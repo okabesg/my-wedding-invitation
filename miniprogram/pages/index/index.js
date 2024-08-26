@@ -49,16 +49,17 @@ Page({
 
         // 酒店信息（通过页面上的「选择位置并获取定位信息」按钮可以获取定位信息，发布前记得把按钮注释起来）
         location: genLocation([{
-            name: '婚宴酒店名XXXXXXXX',
-            address: '详细地址XXXXXXXXXXXXXXX',
-            latitude: 23.03387641906739,
-            longitude: 113.7241439819336
+          "name":"塞外御花园酒店",
+          "address":"内蒙古自治区包头市九原区建设路中段马踏飞燕南侧",
+          "latitude":40.618866,
+          "longitude":109.943078
         }])[0],
+
 
         // 图片信息（其实就是婚纱照了）
         imgs: {
             // 封面图
-            cover: 'https://res.wx.qq.com/t/fed_upload/459fb8da-b31a-420f-b8cc-f51126952685/cover.jpg',
+            cover: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00015.jpg',
 
             // 音乐封面
             poster: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/poster.jpg',
@@ -115,7 +116,7 @@ Page({
             ],
 
             // 结尾图1
-            end1: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end1.jpg',
+            end1: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00228.JPG',
 
             // 结尾图2
             end2: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end2.jpg'
@@ -153,11 +154,11 @@ Page({
         this.lunisolarDate = this.selectComponent('#calendar').lunisolarDate
         this.setData({
             weddingTimeStr: [
-                this.lunisolarDate.format('YYYY-MM-DD HH:mm'),
+                this.lunisolarDate.format('2024-10-07 12:00'),
                 this.lunisolarDate.getSeason(),
-                this.lunisolarDate.format('YYYY年MM月DD号  HH:mm'),
-                this.lunisolarDate.format('农历lMlD  dddd'),
-                this.lunisolarDate.format('YYYY年MM月DD号')
+                this.lunisolarDate.format('2024年10月07号  12:00'),
+                this.lunisolarDate.format('农历9月5日  dddd'),
+                this.lunisolarDate.format('2024年10月07号')
             ]
         })
     },
