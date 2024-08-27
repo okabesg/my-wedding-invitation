@@ -16,6 +16,14 @@
 4. 安装nodejs与npm（主要是npm），在cloudfunction文件夹内打开终端，运行`npm install --save wx-server-sdk@latest`，文件夹内会出现package*等文件以及node_modules文件夹
 5. 右键函数文件夹，上传云端依赖，即可使用云函数调用云数据库以及本地调试
 
+## TODO
+1. 上传图片
+2. 修改文案
+3. 制作彩蛋
+3.1 读取数据库openid
+3.2 制作彩蛋页面
+
+
 最后感谢原作者的请柬模板！帮了大忙！🫡
 
 以下是原库内容：
