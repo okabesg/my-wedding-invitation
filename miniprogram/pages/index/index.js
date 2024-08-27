@@ -42,9 +42,9 @@ Page({
 
         // 背景音乐（默认用陈奕迅的《I DO》，想换的话自己去找音频资源，我是在「婚贝」上找的）
         music: {
-            src: 'https://amp3.hunbei.com/mp3/IDo_ChenYiXun.mp3', // 音频资源链接
-            name: 'I DO', // 歌名
-            singer: '陈奕迅' // 歌手名
+            src: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/爱很简单.mp3', // 音频资源链接
+            name: '爱，很简单', // 歌名
+            singer: '陶喆' // 歌手名
         },
 
         // 酒店信息（通过页面上的「选择位置并获取定位信息」按钮可以获取定位信息，发布前记得把按钮注释起来）
@@ -62,7 +62,7 @@ Page({
             cover: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00015.jpg',
 
             // 音乐封面
-            poster: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/poster.jpg',
+            poster: '../../images/音乐封面.jpg',
 
             // 新郎独照
             husband: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/husband.jpg',
@@ -130,6 +130,45 @@ Page({
         this.isSubmit = false
 
         if (!isRemoved) {
+          /* test
+          wx.cloud.callFunction({
+            name: 'greetings'
+          }).then(({
+              result: {
+                  greeting,
+                  openid
+              }
+          }) => {
+            MANAGER.push(openid)
+          })
+
+          const my_db = wx.cloud.database()
+          const kkk = my_db.collection('surveys')
+          const _ = my_db.command
+          kkk.where({
+            _openid: _.not(_.eq(''))
+          })
+          .get()
+          .then(my_res => {
+            if(my_res.data.length > 0){
+              my_res.data.forEach(item => {
+                console.log(item._openid)
+              });
+            } else {
+              console.log("not found");
+            }
+          })
+          kkk.get({
+            success: my_res => {
+              if(my_res.data.length) {
+                  MANAGER.push(my_res.data[0]._openid)
+              }
+            }
+          })
+
+
+          */ 
+         //test over
             const db = wx.cloud.database()
             db.collection('surveys').get({
                 success: res => {
