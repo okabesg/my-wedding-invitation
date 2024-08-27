@@ -4,7 +4,6 @@ const {
 
 // 管理员openid列表，可以在云开发管理页找到，是管理员的话可以看到公告栏页面入口，也可以通过云函数greetings的返回值openid来查看，还可以在本文件getGreetings方法里通过打印openid变量来查看
 const MANAGER = ['']
-// 自己的：oz9Im7f-ar8x5JSMi8aenK90oDp0
 
 const APP = getApp()
 const isRemoved = APP.globalData.isRemoved
