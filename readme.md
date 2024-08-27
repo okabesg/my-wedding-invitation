@@ -1,5 +1,18 @@
 # wedding-invitation
+本项目用于构建我们婚礼的请柬小程序
+抄的抄的嘿嘿嘿😁
+不过还是改了一些的，得有自己的特色呀(●ˇ∀ˇ●)
 
+## 云函数使用方法：
+1. 开启云服务
+2. 在云函数界面创建与cloudfunctions/下名字相同的函数
+3. 在程序中右键cloudfunctions文件夹，同步环境和函数
+4. 安装nodejs与npm（主要是npm），在cloudfunction文件夹内打开终端，运行`npm install --save wx-server-sdk@latest`，文件夹内会出现package*等文件以及node_modules文件夹
+5. 右键函数文件夹，上传云端依赖，即可使用云函数调用云数据库以及本地调试
+
+最后感谢原作者的请柬模板！帮了大忙！🫡
+以下是原库内容：
+***
 我的婚礼邀请函小程序，可以搜「金钱组合的婚礼邀请函」或扫描下方二维码来查看。
 
 <img src="https://raw.githubusercontent.com/JaminQ/wedding-invitation/imgs/qrcode.jpg" alt="二维码" width="200px" />
