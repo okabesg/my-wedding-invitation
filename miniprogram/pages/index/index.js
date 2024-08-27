@@ -179,9 +179,8 @@ Page({
     // 小程序可见时，拉取祝福语，并设置定时器每20s重新拉取一次祝福语
     onShow() {
         if (!isRemoved) {
-             this.getGreetings()
-
-            this.timer === null && (this.timer = setInterval(() => this.getGreetings(), 20000));
+            // this.getGreetings()
+            // this.timer === null && (this.timer = setInterval(() => this.getGreetings(), 20000));
         }
     },
 
