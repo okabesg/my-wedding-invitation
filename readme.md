@@ -1,6 +1,8 @@
 # wedding-invitation
 本项目用于构建我们婚礼的请柬小程序
+
 抄的抄的嘿嘿嘿😁
+
 不过还是改了一些的，得有自己的特色呀(●ˇ∀ˇ●)
 
 ## 邀请函小程序：
@@ -15,15 +17,9 @@
 5. 右键函数文件夹，上传云端依赖，即可使用云函数调用云数据库以及本地调试
 
 最后感谢原作者的请柬模板！帮了大忙！🫡
+
 以下是原库内容：
 ***
-我的婚礼邀请函小程序，可以搜「金钱组合的婚礼邀请函」或扫描下方二维码来查看。
-
-<img src="https://raw.githubusercontent.com/JaminQ/wedding-invitation/imgs/qrcode.jpg" alt="二维码" width="200px" />
-
-## 以下是预览图，撒一波狗粮
-
-<img src="https://raw.githubusercontent.com/JaminQ/wedding-invitation/imgs/example.jpg" alt="预览图" width="320px" />
 
 ## 序
 
