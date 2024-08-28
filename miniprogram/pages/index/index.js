@@ -123,6 +123,15 @@ Page({
         }
     },
 
+    // 点击放大图片函数
+    clickImg: function(e){
+      var url = e.currentTarget.dataset.src;
+      wx.previewImage({
+        current: url,
+        urls: [url],
+      })
+    },
+
     // 小程序加载时，拉取表单信息并填充，以及格式化各种婚礼时间
     onLoad() {
         this.timer = null
