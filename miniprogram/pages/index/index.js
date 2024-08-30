@@ -40,7 +40,7 @@ Page({
             }
         ] : [],
 
-        // 背景音乐（默认用陈奕迅的《I DO》，想换的话自己去找音频资源，我是在「婚贝」上找的）
+        // 背景音乐（使用的陶喆的《爱很简单》）
         music: {
             src: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/爱很简单.mp3', // 音频资源链接
             name: '爱，很简单', // 歌名
@@ -65,7 +65,7 @@ Page({
             poster: '../../images/音乐封面.jpg',
 
             // 新郎独照
-            husband: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/husband.jpg',
+            husband: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00074.jpg',
 
             // 新娘独照
             wife: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/wife.jpg',
@@ -100,13 +100,14 @@ Page({
 
             // 轮播图2
             swiper2: [
-                'https://res.wx.qq.com/t/fed_upload/65134c0f-c513-410e-b4ff-ab738801540f/swiper2-1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/65134c0f-c513-410e-b4ff-ab738801540f/swiper2-2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/65134c0f-c513-410e-b4ff-ab738801540f/swiper2-3.jpg'
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/底轮1.JPG',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/底轮2.JPG',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/底轮3.JPG',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/底轮下.jpg'
             ],
 
             // 轮播图2下方常驻图
-            swiper2Static: 'https://res.wx.qq.com/t/fed_upload/30d86ea7-84b8-46ce-ae60-e31b83a04fcc/swiper2-static.jpg',
+            swiper2Static: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/底轮下.JPG',
 
             // 轮播图3
             swiper3: [
@@ -129,6 +130,16 @@ Page({
       wx.previewImage({
         current: url,
         urls: [url],
+      })
+    },
+
+    // 轮播图片
+    clickImg_re: function(e){
+      var url = e.currentTarget.dataset.src;
+      var index = e.currentTarget.dataset.index;
+      wx.previewImage({
+        current: url[index],
+        urls: url,
       })
     },
 

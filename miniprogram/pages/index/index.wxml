@@ -59,21 +59,23 @@
 </view>
 
 <view class="husband lh21 mb100">
-    <image class="img-husband" src="{{ imgs.husband }}" mode="aspectFit" />
+    <image class="img-husband" src="{{ imgs.husband }}" mode="aspectFill" />
     <view class="husband-desc">
         <view>/</view>
-        <view>他有 最暖的真心</view>
+        <view>他是 最暖的真心</view>
         <view>细腻的心思</view>
         <view>虎先锋三遍过顶级动作选手（不是</view>
+        <view>(我的睡前故事书）</view>
     </view>
 </view>
 
 <view class="wife lh21 mb100">
     <view class="wife-desc">
         <view>/</view>
-        <view>{{ anniversary }}</view>
-        <view>一见钟情</view>
-        <view>是灵魂认出了你</view>
+        <view>嗅觉敏感星人</view>
+        <view>甜品脑袋</view>
+        <view>选择恐惧症患者</view>
+        <view>(我各种爱好的搭子）</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" bindtap="clickImg" data-src="{{ imgs.wife }}" mode="aspectFit" />
 </view>
@@ -93,20 +95,20 @@
             <image class="img-full-width" src="{{ item }}" mode="widthFix" />
         </swiper-item>
     </swiper>
-    <view>人们从诗人的字句里，</view>
-    <view>选取自己心爱的意义。</view>
-    <view>但诗句的最终意义是指向你。</view>
-    <view>                                  ——泰戈尔《吉檀迦利》</view>
+    <view>我们相识于初中，相伴与大学</view>
+    <view>2015.06.30</view>
+    <view>一个难忘的日子，我们在一起了</view>
+    <view>此后是你，一直是你，永远是你</view>
 </view>
 
 <view class="tc lh21 mb152">
     <view class="img-list mb58">
         <image wx:for="{{ imgs.series }}" wx:key="*this" class="img-full-width" src="{{ item }}" mode="widthFix" />
     </view>
-    <view>人生其实只要两次幸运就好</view>
-    <view>一次遇见你，一次是走到底</view>
-    <view>如今，我们决定开启人生新的篇章</view>
-    <view>让爱以夫妻之名延续</view>
+    <view>之后，迎来了难熬的异地</view>
+    <view>一个在长沙，一个在成都</view>
+    <view>每次相见都欢欣雀跃</view>
+    <view>每次分别都依依不舍</view>
 </view>
 
 <view class="leaf lh21 mb152">
@@ -135,8 +137,8 @@
             <image class="img-map-item" src="{{ imgs.map[3] }}" mode="aspectFit" />
         </view>
     </view>
-    <view>不管外面的世界风雨飘摇也罢</view>
-    <view>希望我们总能以最简单的方式相伴</view>
+    <view>在我们的坚持下，异地终于结束了</view>
+    <view>我们终能以最简单的方式相伴</view>
     <view>家人闲坐，灯火可亲</view>
     <view>世上最有趣的事</view>
     <view>就是和最爱的人一起虚度光阴</view>
@@ -145,11 +147,11 @@
 <view class="tc lh21 mb100">
     <swiper class="swiper-outdoor" autoplay circular interval="2500" easing-function="linear" indicator-dots>
         <swiper-item wx:for="{{ imgs.swiper2 }}" wx:key="*this">
-            <image class="img-full-width" src="{{ item }}" mode="widthFix" />
+            <image class="img-full-width" src="{{ item }}" bindtap="clickImg_re" data-src="{{imgs.swiper2}}" data-index="{{index}}"mode="widthFix" />
         </swiper-item>
     </swiper>
     
-    <image class="img-swiper-float" src="{{ imgs.swiper2Static }}" mode="aspectFit" />
+    <!-- <image class="img-swiper-float" src="{{ imgs.swiper2Static }}" mode="aspectFit" /> -->
     <view>我们将成为彼此紧紧依靠的家人</view>
     <view>银河系浪漫的搭车客</view>
     <view>共同去探索广阔遥远的世界</view>
@@ -159,7 +161,7 @@
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
     <image class="img-you mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-PZQCrTaWTKSdJKe2Gd5FzatfyQWzZyjA.png?imageMogr2/auto-orient/thumbnail/603x118>/format/webp" mode="aspectFit" />
     <view>人的一生有三万多天</view>
-    <view>很开心这一天</view>
+    <view>很开心这一天</view> 
     <view>你专为我们而来</view>
     <view>请准备好你的好心情和好胃口</view>
     <view>来奔赴这场{{ weddingTimeStr[1] }}日的聚会叭~</view>
@@ -173,7 +175,6 @@
         </swiper-item>
     </swiper>
     <view class="mb58">{{ couple[0].name }} & {{ couple[1].name }}</view>
-    <view>携同我们的父母</view>
     <view>邀请您出席我们的婚礼仪式</view>
     <view>见证和分享我们的幸福时刻</view>
 </view>
@@ -226,28 +227,24 @@
 
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
-    <image class="img-full-width mb100" src="{{ imgs.end1 }}" mode="widthFix" />
+    
     <view class="tl">
         <view class="tips">温馨tips：</view>
         <view>请预留好{{ weddingTimeStr[4] }}这一天的行程</view>
         <view>如果被事务牵绊或临时有变化</view>
         <view class="mb58">请提前告知新郎/新娘</view>
-        <view>许久未见 ，甚是想念</view>
+        <view>最后，希望各位朋友家人吃好🍖，喝好🥂，玩好🍭！</view>
         <view>我们，婚礼见</view>
     </view>
 </view>
 
 <view class="tc lh21 mb152">
-    <image class="img-full-width mb100" src="{{ imgs.end2 }}" mode="widthFix" />
+  <image class="img-full-width mb100" src="{{ imgs.end1 }}" mode="widthFix" />
     <view class="tr mb100">
-        <view>我把我的整个灵魂都给你</view>
-        <view>连同它的怪癖</view>
-        <view>耍小脾气，忽明忽暗</view>
-        <view>一千八百种坏毛病</view>
-        <view>它真讨厌</view>
-        <view class="mb58">只有一点好，爱你</view>
-        <view>/ 爱你就像爱生命 /</view>
-        <view>/ 王小波 /</view>
+        <view>爱情是一场没有终点的旅行 |</view>
+        <view>能够遇见你 |</view>
+        <view>陪你走过每一步 |</view>
+        <view class="mb58">是我此生最大的幸福 |</view>
     </view>
     <image class="img-end" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-19-niYXMwfBrA5bCeRQSFnXRRKRmcSnmfEC.png?imageMogr2/auto-orient/thumbnail/519x264>/format/webp" mode="aspectFit" />
 </view>
