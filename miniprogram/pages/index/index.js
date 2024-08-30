@@ -40,7 +40,7 @@ Page({
             }
         ] : [],
 
-        // 背景音乐（使用的陶喆的《爱很简单》）
+        // 背景音乐（使用的陶喆的《爱很简单》git）
         music: {
             src: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/爱很简单.mp3', // 音频资源链接
             name: '爱，很简单', // 歌名
@@ -230,7 +230,7 @@ Page({
         }
 
         if (this.music !== null) {
-            this.music.destroy()
+            this.music.stop()
             this.music = null
         }
     },
@@ -254,12 +254,13 @@ Page({
     // 小程序可用时，初始化背景音乐并自动播放
     onReady() {
         if (this.music === null) {
-            this.music = wx.createInnerAudioContext({
-                useWebAudioImplement: false
-            })
+            this.music = wx.getBackgroundAudioManager()
             this.music.src = this.data.music.src
-            this.music.loop = true
-            this.music.autoplay = true
+            this.music.title = this.data.music.name
+            this.music.singer = this.data.music.singer
+            this.music.coverImgUrl = 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/音乐封面.jpg'
+            
+            this.music.play();
         }
     },
 

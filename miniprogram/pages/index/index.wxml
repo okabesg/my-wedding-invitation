@@ -23,7 +23,7 @@
     </view>
     <view class="music-left">
         <view class="music-title">{{ music.name }} - {{ music.singer }}</view>
-        <view class="music-desc">已为您播放了歌曲</view>
+        <view class="music-desc">这是一首很有意义的歌</view>
     </view>
     <view class="music-right">
         <image class="music-status" src="https://h5cdn.hunbei.com/editorCustomPic/2022-5-25-dcdPDnJmTyZs5FbjdeWdXShEEYRkN6A4.gif?imageMogr2/auto-orient/thumbnail/48x34>" mode="aspectFit" />

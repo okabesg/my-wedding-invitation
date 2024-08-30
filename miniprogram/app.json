@@ -9,7 +9,8 @@
 		"navigationBarTitleText": "许久未见·甚是想念",
         "navigationBarTextStyle": "black",
         "backgroundColor": "#fff"
-	},
+  },
+  "requiredBackgroundModes": ["audio"],
 	"style": "v2",
 	"sitemapLocation": "sitemap.json",
 	"lazyCodeLoading": "requiredComponents"
