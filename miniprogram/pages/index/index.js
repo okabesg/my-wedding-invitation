@@ -259,8 +259,10 @@ Page({
             this.music.title = this.data.music.name
             this.music.singer = this.data.music.singer
             this.music.coverImgUrl = 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/音乐封面.jpg'
+            this.music.audioType = "music"
             
             this.music.play();
+            this.music.paused = false
         }
     },
 
@@ -268,7 +270,7 @@ Page({
     onShareAppMessage() {
         return {
             title: '好久不见，婚礼见٩(๑^o^๑)۶',
-            imageUrl: '../../images/shareAppMsg.jpg'
+            imageUrl: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/share.jpg'
         }
     },
 
@@ -276,7 +278,7 @@ Page({
     onShareTimeline() {
         return {
             title: '好久不见，婚礼见٩(๑^o^๑)۶',
-            imageUrl: '../../images/shareTimeline.jpg'
+            imageUrl: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/share.jpg'
         }
     },
 

@@ -23,7 +23,7 @@
     </view>
     <view class="music-left">
         <view class="music-title">{{ music.name }} - {{ music.singer }}</view>
-        <view class="music-desc">这是一首很有意义的歌</view>
+        <view class="music-desc">现在我了解了什么是爱</view>
     </view>
     <view class="music-right">
         <image class="music-status" src="https://h5cdn.hunbei.com/editorCustomPic/2022-5-25-dcdPDnJmTyZs5FbjdeWdXShEEYRkN6A4.gif?imageMogr2/auto-orient/thumbnail/48x34>" mode="aspectFit" />
@@ -218,7 +218,7 @@
             <input type="number" placeholder="出席人数" name="num" value="{{ form.num }}" placeholder-class="form-input-placeholder" maxlength="2" />
         </view>
         <view>
-            <textarea type="text" placeholder="就算没时间来也可以送上祝福哦🎉🎉" name="greeting" value="{{ form.greeting }}" placeholder-class="form-input-placeholder" maxlength="140" disable-default-padding />
+            <textarea type="text" placeholder="就算没时间来也可以送上祝福🎉🎉，可以上墙哦~" name="greeting" value="{{ form.greeting }}" placeholder-class="form-input-placeholder" maxlength="140" disable-default-padding />
         </view>
         <button form-type="submit" open-type="getUserInfo">{{ name ? '更新' : '提交' }}</button>
     </view>
