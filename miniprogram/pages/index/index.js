@@ -59,43 +59,43 @@ Page({
         // 图片信息（其实就是婚纱照了）
         imgs: {
             // 封面图
-            cover: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00015.jpg',
+            cover: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/封面.jpg',
 
             // 音乐封面
             poster: '../../images/音乐封面.jpg',
 
             // 新郎独照
-            husband: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00074.jpg',
+            husband: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/新郎照.jpg',
 
             // 新娘独照
-            wife: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/wife.jpg',
+            wife: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/新娘照.jpg',
 
             // 轮播图1
             swiper1: [
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-3.jpg'
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/l1.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/l2.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/l3.jpg'
             ],
 
             // 连续图
             series: [
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series3.jpg'
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/ll2.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/ll1.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/ll3.jpg'
             ],
 
             // 左上图
-            leftUp: 'https://res.wx.qq.com/t/fed_upload/50898c02-4dd4-480a-ba6c-b175461b7b31/left-up.jpg',
+            leftUp: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/左上.jpg',
 
             // 左下图
-            leftDown: 'https://res.wx.qq.com/t/fed_upload/50898c02-4dd4-480a-ba6c-b175461b7b31/left-down.jpg',
+            leftDown: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/左下.jpg',
 
             // 四宫图
             map: [
-                'https://res.wx.qq.com/t/fed_upload/b959a506-ca42-47e1-9fbd-732a6151e3d9/map1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/b959a506-ca42-47e1-9fbd-732a6151e3d9/map2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/b959a506-ca42-47e1-9fbd-732a6151e3d9/map3.jpg',
-                'https://res.wx.qq.com/t/fed_upload/b959a506-ca42-47e1-9fbd-732a6151e3d9/map4.jpg'
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/40.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/42.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/41.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/43.png'
             ],
 
             // 轮播图2
@@ -111,13 +111,13 @@ Page({
 
             // 轮播图3
             swiper3: [
-                'https://res.wx.qq.com/t/fed_upload/77b990f0-6f16-4fa2-8163-ad0eac3e40da/swiper3-1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/77b990f0-6f16-4fa2-8163-ad0eac3e40da/swiper3-2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/77b990f0-6f16-4fa2-8163-ad0eac3e40da/swiper3-3.jpg'
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/d1.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/d2.jpg',
+                'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/d3.jpg'
             ],
 
             // 结尾图1
-            end1: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/DSC00228.JPG',
+            end1: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/最后.jpg',
 
             // 结尾图2
             end2: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end2.jpg'
