@@ -47,15 +47,12 @@
 <view class="tc lh21 mb100">
     <image class="img-introduce" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-WNhBXi3ty4fw7dwFBxSZneDKYtz754ya.png?imageMogr2/auto-orient/thumbnail/542.00x58.84>" mode="aspectFit" />
     <view class="moon">
-        <image class="img-moon" src="https://h5cdn.hunbei.com/editorCustomPic/2022-2-16-6xEP56tzDiPX53f4WZbAYR3pmwAZB7M7.png?imageMogr2/auto-orient/thumbnail/310.00x465.00>" mode="aspectFit" />
-        <image class="img-moon" src="https://h5cdn.hunbei.com/editorCustomPic/2022-2-16-TaHn8RGyJTdcwF5HGPkxrrifeFPNmPek.png?imageMogr2/auto-orient/thumbnail/310.00x464.11>" mode="aspectFit" />
-        <view class="birthday">
-            <text wx:for="{{ couple }}" wx:key="name">{{ item.birthday }}</text>
-        </view>
+        <image class="img-moon" src="cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/left.jpg" mode="aspectFit" />
+        <image class="img-moon" src="cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/right.jpg" mode="aspectFit" />
     </view>
-    <view>出生时的月亮</view>
-    <view>Random luck in universe</view>
-    <view>宇宙间相遇的浪漫</view>
+    <view>我们在最美好的年纪相遇，相爱</view>
+    <view>郑重地选择对方成为相伴一生的人</view>
+    <view>这一路，走得一直很坚定</view>
 </view>
 
 <view class="husband lh21 mb100">
@@ -65,7 +62,7 @@
         <view>乐观主义者</view>
         <view>国宴级厨师</view>
         <view>动作游戏天尊</view>
-        <view>(我的睡前故事书）</view>
+        <view>睡前故事表演艺术家</view>
     </view>
 </view>
 
@@ -74,17 +71,17 @@
         <view>/</view>
         <view>甜品脑袋</view>
         <view>嗅觉敏感星人</view>
-        <view>选择恐惧症患者</view>
-        <view>(我的各种搭子）</view>
+        <view>中度选择困难症患者</view>
+        <view>香水品鉴大师</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" bindtap="clickImg" data-src="{{ imgs.wife }}" mode="aspectFit" />
 </view>
 
 <view class="tc lh21 mb100">
-    <view>我常常觉得也许这辈子</view>
-    <view>不会得到所谓的爱情了</view>
-    <view>直到</view>
-    <view>你出现了</view>
+    <view>我常常感叹单纯而炽热的爱是奢侈品</view>
+    <view>而我竟然如此轻易地拥有了</view>
+    <view>因为你</view>
+    <view>我变成了全宇宙最幸福最幸运的人</view>
 </view>
 
 <view class="tc lh21 mb100">
@@ -98,7 +95,7 @@
     <view>我们相识于初中，相伴与大学</view>
     <view>2015.06.30</view>
     <view>一个难忘的日子，我们在一起了</view>
-    <view>此后是你，一直是你，永远是你</view>
+    <view>从此，内心最柔软的地方变得具象起来</view>
 </view>
 
 <view class="tc lh21 mb152">
@@ -125,7 +122,7 @@
     <view>这期间我们去过了很多地方</view>
     <view>经历了很多事情</view>
     <view>最终，选择在长沙安定下来</view>
-    <view>并迎来了第一位家庭成员</view>
+    <view>并组建了自己的小家</view>
 </view>
 
 <view class="tc lh21 mb100">
