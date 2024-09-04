@@ -8,6 +8,9 @@
 ## 邀请函小程序：
 <img src="img/qrcode.jpg"  width="200" />
 
+## 点击放大图片方法：
+1. 在.wxml文件中的<image>标签内添加`bindtap="" data-src=""`相关内容
+2. 在index.js中添加与`bindtap`对应的函数名，调用wx.previewImg函数
 
 ## 云函数使用方法：
 1. 开启云服务
