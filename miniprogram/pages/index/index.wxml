@@ -47,8 +47,8 @@
 <view class="tc lh21 mb100">
     <image class="img-introduce" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-WNhBXi3ty4fw7dwFBxSZneDKYtz754ya.png?imageMogr2/auto-orient/thumbnail/542.00x58.84>" mode="aspectFit" />
     <view class="moon">
-        <image class="img-moon" src="cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/left.jpg" mode="aspectFit" />
-        <image class="img-moon" src="cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/right.jpg" mode="aspectFit" />
+        <image class="img-moon" src="{{imgs.left}}" bindtap="clickImg" data-src="{{imgs.left}}" mode="aspectFit" />
+        <image class="img-moon" src="{{imgs.right}}" bindtap="clickImg" data-src="{{imgs.right}}" mode="aspectFit" />
     </view>
     <view>我们在最美好的年纪相遇，相爱</view>
     <view>郑重地选择对方成为相伴一生的人</view>
@@ -81,7 +81,7 @@
     <view>我常常感叹单纯而炽热的爱是奢侈品</view>
     <view>而我竟然如此轻易地拥有了</view>
     <view>因为你</view>
-    <view>我变成了全宇宙最幸福最幸运的人</view>
+    <view>我变成了全世界最幸福最幸运的人</view>
 </view>
 
 <view class="tc lh21 mb100">
@@ -185,7 +185,7 @@
 
 <view class="location mb100">
     <view>
-        <view>{{ location.name }}</view>
+        <view>{{ location.name }}维多利亚宴会厅</view>
         <view>{{ location.address }}</view>
     </view>
     <map longitude="{{ location.longitude }}" latitude="{{ location.latitude }}" enable-zoom="{{ false }}" enable-scroll="{{ false }}" markers="{{ location.markers }}" />

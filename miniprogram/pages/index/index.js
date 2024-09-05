@@ -64,6 +64,10 @@ Page({
             // 音乐封面
             poster: '../../images/音乐封面.jpg',
 
+            // 另一半
+            left: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/left.jpg',
+            right: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/right.jpg',
+
             // 新郎独照
             husband: 'cloud://gz-wedding-8gwf2yh6f9a456d3.677a-gz-wedding-8gwf2yh6f9a456d3-1328999877/新郎照.jpg',
 
@@ -214,10 +218,10 @@ Page({
         this.lunisolarDate = this.selectComponent('#calendar').lunisolarDate
         this.setData({
             weddingTimeStr: [
-                this.lunisolarDate.format('2024-10-07 12:00'),
+                this.lunisolarDate.format('2024-10-07 12:28'),
                 this.lunisolarDate.getSeason(),
                 this.lunisolarDate.format('2024年10月07号  12:00'),
-                this.lunisolarDate.format('农历9月5日  dddd'),
+                this.lunisolarDate.format('农历九月初五  dddd'),
                 this.lunisolarDate.format('2024年10月07号')
             ]
         })
