@@ -69,10 +69,10 @@
 <view class="wife lh21 mb100">
     <view class="wife-desc">
         <view>/</view>
-        <view>甜品脑袋</view>
-        <view>嗅觉敏感星人</view>
-        <view>中度选择困难症患者</view>
+        <view>理想主义者</view>
+        <view>惊悚悬疑电影收割机</view>
         <view>香水品鉴大师</view>
+        <view>国家一级猫咪饲养员</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" bindtap="clickImg" data-src="{{ imgs.wife }}" mode="aspectFit" />
 </view>

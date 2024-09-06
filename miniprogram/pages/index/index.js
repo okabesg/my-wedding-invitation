@@ -220,9 +220,9 @@ Page({
             weddingTimeStr: [
                 this.lunisolarDate.format('2024-10-07 12:28'),
                 this.lunisolarDate.getSeason(),
-                this.lunisolarDate.format('2024年10月07号  12:00'),
-                this.lunisolarDate.format('农历九月初五  dddd'),
-                this.lunisolarDate.format('2024年10月07号')
+                this.lunisolarDate.format('2024年10月7日  12:28'),
+                this.lunisolarDate.format('农历九月初五  星期一'),
+                this.lunisolarDate.format('2024年10月7日')
             ]
         })
     },
@@ -243,8 +243,8 @@ Page({
     // 小程序可见时，拉取祝福语，并设置定时器每20s重新拉取一次祝福语
     onShow() {
         if (!isRemoved) {
-            // this.getGreetings()
-            // this.timer === null && (this.timer = setInterval(() => this.getGreetings(), 20000));
+            this.getGreetings()
+            this.timer === null && (this.timer = setInterval(() => this.getGreetings(), 20000));
         }
     },
 
