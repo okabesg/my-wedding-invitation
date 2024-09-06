@@ -9,6 +9,7 @@
 <img src="img/qrcode.jpg"  width="200" />
 
 封面效果图：
+
 <img src="img/封面.png"  width="300" />
 
 ## 点击放大图片方法：
